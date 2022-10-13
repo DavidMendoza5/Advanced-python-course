@@ -75,3 +75,21 @@ print("Diferencia Set1 y Set3:", my_difference_set)
 # Diferencia simétrica (contrario a la intersección) de sets, igual se puede hacer de la sigueinte forma: my_set.symmetric_difference(my_set3)
 my_symmetric_difference_set = my_set ^ my_set3
 print("Diferencia simétrica Set1 y Set3:", my_symmetric_difference_set)
+
+
+# Eliminar elementos duplicados de una lista
+def remove_duplicates(some_list):
+  # without_duplicates = []
+  # for element in some_list:
+  #   if element not in without_duplicates:
+  #     without_duplicates.append(element)
+  
+  # return without_duplicates
+
+  return list(set(some_list))
+
+def run():
+  random_list = [1, 1, 2, 4, 6, 2]
+  print(remove_duplicates(random_list))
+
+run()
