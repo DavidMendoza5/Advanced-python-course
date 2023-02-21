@@ -21,5 +21,5 @@ print(my_day.month)
 print(my_day.day)
 
 # Dar formato a la fecha, se pueden ir cambiando los parámetros del método strftime
-my_latam_date = my_time.strftime("%d/%m/%Y")
+my_latam_date = my_time.strftime("%d-%m-%Y")
 print("Latam", my_latam_date)
